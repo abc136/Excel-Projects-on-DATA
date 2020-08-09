@@ -1,0 +1,8 @@
+CREATE TABLE `monthly-sales-reporting`.`data` ( `date` DATE NOT NULL , `product` VARCHAR(200) NOT NULL , `unit price` FLOAT NOT NULL , `units sold` INT NOT NULL , `sales price` FLOAT NOT NULL ) ENGINE = InnoDB;
+
+
+LOAD  DATA INFILE "C:\\Users\\PC DATA\\Documents\\sales-201710.csv" INTO TABLE data
+fields TERMINATED BY ','
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES
+(`date`,`product`,`unit price`,`units sold`,`sales price`)
