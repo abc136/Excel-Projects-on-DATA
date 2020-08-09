@@ -1,0 +1,1 @@
+SELECT * FROM `data` into outfile "C:\\Users\\PC DATA\\Documents\\monthly-sales-reporting.csv" fields TERMINATED BY ',' LINES TERMINATED BY '\n'
